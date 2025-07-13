@@ -1,73 +1,146 @@
-# Welcome to your Lovable project
+# 🧩 UI Component Library (Vite + React + TypeScript + Tailwind CSS)
 
-## Project info
+A modular, scalable UI component system built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**. Includes dozens of reusable components such as buttons, dialogs, toasts, drawers, charts, and more—ready to use across your apps.
 
-**URL**: https://lovable.dev/projects/b735273e-64b6-4472-b4e9-fe86b9d6530c
+---
 
-## How can I edit this code?
+## 🗂️ File Structure
 
-There are several ways of editing your application.
+```
+.
+├── public/                  # Static assets (favicon, placeholder, robots.txt)
+│
+├── src/
+│   ├── components/
+│   │   ├── ui/              # All reusable UI components
+│   │   │   ├── button.tsx
+│   │   │   ├── accordion.tsx
+│   │   │   ├── ...
+│   │   ├── CodeExamples.tsx
+│   │   ├── DebugToolkit.tsx
+│   │   └── TestDashboard.tsx
+│   │
+│   ├── hooks/              # Custom hooks
+│   │   ├── use-mobile.tsx
+│   │   └── use-toast.ts
+│   │
+│   ├── lib/                # Utility functions
+│   │   └── utils.ts
+│   │
+│   ├── pages/              # Route-based pages
+│   │   ├── Index.tsx
+│   │   └── NotFound.tsx
+│   │
+│   ├── App.tsx             # Root app component
+│   ├── main.tsx            # Entry point
+│   ├── App.css
+│   ├── index.css
+│   └── vite-env.d.ts
+│
+├── tailwind.config.ts      # Tailwind configuration
+├── vite.config.ts          # Vite configuration
+├── tsconfig*.json          # TypeScript configs
+├── package.json            # Project dependencies & scripts
+├── postcss.config.js
+├── eslint.config.js
+├── .gitignore
+├── bun.lockb               # Bun lockfile (if using Bun)
+└── README.md
+```
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b735273e-64b6-4472-b4e9-fe86b9d6530c) and start prompting.
+## ✨ Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- 🧱 40+ reusable UI components (e.g., Modal, Toast, Drawer, Tabs, Tooltip)
+- 💡 Built with **TypeScript** and **React**
+- ⚡ Lightning-fast dev server with **Vite**
+- 🎨 Styled using **Tailwind CSS**
+- 📦 Easy to extend, tree-shakeable components
+- 🧪 Includes utility/test pages: `TestDashboard`, `CodeExamples`, and `DebugToolkit`
+- 🔁 Custom hooks (`use-mobile`, `use-toast`)
+- 📁 Modular structure for pages, components, hooks, and libs
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 1. Clone the Repo
 
-Follow these steps:
+```bash
+git clone https://github.com/noahnalh/mern-test-mastery-guide.git
+cd mern-test-mastery-guide
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 2. Install Dependencies
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+If you're using **Bun**:
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+bun install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Or if you're using **npm**:
+
+```bash
+npm install
+```
+
+### 3. Run the Dev Server
+
+```bash
+bun run dev
+# or
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Visit `http://localhost:5173` to view the app.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 🧪 Development Notes
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- All reusable components live in `src/components/ui/`
+- Custom hooks go in `src/hooks/`
+- Use `TestDashboard.tsx` to preview layouts/components
+- Toasts are built using `use-toast.ts` and `sonner.tsx`
+- Tailwind config is fully extendable via `tailwind.config.ts`
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 📦 Build for Production
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```bash
+bun run build
+# or
+npm run build
+```
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/b735273e-64b6-4472-b4e9-fe86b9d6530c) and click on Share -> Publish.
+## 🔍 Linting & Formatting
 
-## Can I connect a custom domain to my Lovable project?
+```bash
+bun run lint
+# or
+npm run lint
+```
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🧩 Component Highlight
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Some of the components included:
+
+- `Button`, `Switch`, `Checkbox`, `Select`, `Toast`
+- `Drawer`, `Dialog`, `Tooltip`, `Accordion`, `Tabs`
+- `Chart`, `Carousel`, `Calendar`, `Avatar`, `Card`
+- `Sidebar`, `Sheet`, `HoverCard`, `Command`, `Progress`
+
+---
+
+
+## 👨‍💻 Author
+
+[Noah] – contributions, suggestions, and issues welcome!
+
